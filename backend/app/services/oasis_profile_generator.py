@@ -1,11 +1,12 @@
 """
-OASIS Agent Profile生成器
-将Zep图谱中的实体转换为OASIS模拟平台所需的Agent Profile格式
+OASIS Agent Profile Generator
+Converts entities from the Zep knowledge graph into the Agent Profile format
+required by the OASIS simulation platform
 
-优化改进：
-1. 调用Zep检索功能二次丰富节点信息
-2. 优化提示词生成非常详细的人设
-3. 区分个人实体和抽象群体实体
+Improvements:
+1. Calls Zep retrieval to further enrich node information
+2. Optimized prompts to generate highly detailed personas
+3. Distinguishes between individual entities and abstract group entities
 """
 
 import json

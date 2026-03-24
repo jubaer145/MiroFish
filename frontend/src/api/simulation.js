@@ -1,7 +1,7 @@
 import service, { requestWithRetry } from './index'
 
 /**
- * 创建模拟
+ * Create simulation
  * @param {Object} data - { project_id, graph_id?, enable_twitter?, enable_reddit? }
  */
 export const createSimulation = (data) => {
@@ -9,7 +9,7 @@ export const createSimulation = (data) => {
 }
 
 /**
- * 准备模拟环境（异步任务）
+ * Prepare simulation environment (async task)
  * @param {Object} data - { simulation_id, entity_types?, use_llm_for_profiles?, parallel_profile_count?, force_regenerate? }
  */
 export const prepareSimulation = (data) => {
@@ -17,7 +17,7 @@ export const prepareSimulation = (data) => {
 }
 
 /**
- * 查询准备任务进度
+ * Query preparation task progress
  * @param {Object} data - { task_id?, simulation_id? }
  */
 export const getPrepareStatus = (data) => {
@@ -25,7 +25,7 @@ export const getPrepareStatus = (data) => {
 }
 
 /**
- * 获取模拟状态
+ * Get simulation status
  * @param {string} simulationId
  */
 export const getSimulation = (simulationId) => {
@@ -33,7 +33,7 @@ export const getSimulation = (simulationId) => {
 }
 
 /**
- * 获取模拟的 Agent Profiles
+ * Get Agent Profiles for a simulation
  * @param {string} simulationId
  * @param {string} platform - 'reddit' | 'twitter'
  */
@@ -42,7 +42,7 @@ export const getSimulationProfiles = (simulationId, platform = 'reddit') => {
 }
 
 /**
- * 实时获取生成中的 Agent Profiles
+ * Get Agent Profiles in real time while they are being generated
  * @param {string} simulationId
  * @param {string} platform - 'reddit' | 'twitter'
  */
